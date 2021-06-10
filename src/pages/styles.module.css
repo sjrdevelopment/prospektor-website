@@ -1,0 +1,140 @@
+body {
+    color: black;
+    background: white;
+    text-align: center;
+    font-family: 'Saira', sans-serif;
+}
+
+.masthead {
+    text-align: left;
+    padding: 8px;
+}
+
+.masthead p {
+    margin: 34px 16px;
+}
+
+
+@media only screen and (min-width: 740px) {
+
+    .masthead p {
+        text-align: right;
+        float: right;
+    }
+
+}
+
+.logo {
+    width:100%;
+    max-width: 300px;
+}
+
+.sketch {
+    position: relative;
+    width: 50%;
+    margin-top: -260px;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.sketchWrapper {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    float: left;
+    clear: both;
+    display: block;
+}
+
+.heading1 {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.lhs {
+    height: 180px;
+}
+
+.lhs p {
+    font-size: 16px;
+    padding-top:46px;
+    font-weight: 200;
+}
+
+.rhs {
+    background-image: linear-gradient(-180deg, #54B9FF 0%, #8955EF 100%);
+    height: 180px;
+}
+
+.rhs p {
+    font-size: 16px;
+    color: white;
+    padding-top:80px;
+}
+
+
+@media only screen and (min-width: 740px) {
+    .sketch {
+        position: relative;
+        width: 50%;
+        margin-top: -400px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .sketchWrapper {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        float: left;
+        clear: both;
+        display: block;
+    }
+
+    .lhs {
+        float: left;
+        width: 50%;
+        height: 420px;
+    }
+
+    .lhs p {
+        margin-top: 250px;
+        padding:0 8px;
+        font-size: 24px;
+    }
+
+    .rhs {
+        background-image: linear-gradient(-180deg, #54B9FF 0%, #8955EF 100%);
+        float: right;
+        width: 50%;
+        height: 420px;
+    }
+
+    .rhs p {
+        font-size: 24px;
+        color: white;
+        text-align: right;
+        margin: 250px 8px 0 0;
+        padding: 0 8px;
+    }
+}
+
+.secondary {
+    border: 1px solid blue;
+    position: relative;
+    display: block;
+    clear: both;
+}
+
+.contact {
+    border: 1px solid yellow;
+}
