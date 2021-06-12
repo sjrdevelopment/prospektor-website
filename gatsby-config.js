@@ -2,5 +2,12 @@ module.exports = {
   siteMetadata: {
     title: "Prospektor",
   },
-  plugins: [],
+  plugins: [
+  {
+    resolve: `gatsby-plugin-s3`,
+    options: {
+      bucketName: "prospektor.co.uk",
+    },
+  },
+]
 };

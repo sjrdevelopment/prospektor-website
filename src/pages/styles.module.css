@@ -3,29 +3,25 @@ body {
     background: white;
     text-align: center;
     font-family: 'Saira', sans-serif;
+    background-image: linear-gradient(-180deg, #54b9ff 0%, #8955ef 100%);
 }
 
+main {
+    max-width: 960px;
+    margin: 40px auto 0;
+    border-radius: 8px;
+    background: white;
+    -webkit-box-shadow: 0px 1px 15px 5px #355daf;
+    box-shadow: 0px 1px 15px 5px #355daf;
+    padding: 16px;
+}
 .masthead {
     text-align: left;
     padding: 8px;
 }
 
-.masthead p {
-    margin: 34px 16px;
-}
-
-
-@media only screen and (min-width: 740px) {
-
-    .masthead p {
-        text-align: right;
-        float: right;
-    }
-
-}
-
 .logo {
-    width:100%;
+    width: 100%;
     max-width: 300px;
 }
 
@@ -64,21 +60,58 @@ body {
 
 .lhs p {
     font-size: 16px;
-    padding-top:46px;
+    padding-top: 46px;
     font-weight: 200;
 }
 
 .rhs {
-    background-image: linear-gradient(-180deg, #54B9FF 0%, #8955EF 100%);
+    background-image: linear-gradient(-180deg, #54b9ff 0%, #8955ef 100%);
     height: 180px;
 }
 
 .rhs p {
     font-size: 16px;
     color: white;
-    padding-top:80px;
+    padding-top: 80px;
+}
+.secondary {
+    position: relative;
+    display: block;
+    clear: both;
+    padding: 40px 8px 8px;
 }
 
+.secondary p {
+    font-weight: 200;
+}
+
+.secondary h4 {
+    font-weight: 400;
+}
+
+.contact {
+    border-top: 4px solid #6b99fa;
+    margin: 16px 0;
+}
+
+.contact .button {
+    appearance: none;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    background-image: linear-gradient(-180deg, #54b9ff 0%, #8955ef 100%);
+    font: inherit;
+    color: white;
+    text-decoration: none;
+    margin: 14px 0 0;
+    display: block;
+}
+
+.contact .button:hover,
+.contact .button:focus,
+.contact .button:active {
+    text-decoration: underline;
+}
 
 @media only screen and (min-width: 740px) {
     .sketch {
@@ -108,12 +141,12 @@ body {
 
     .lhs p {
         margin-top: 250px;
-        padding:0 8px;
+        padding: 0 8px;
         font-size: 24px;
     }
 
     .rhs {
-        background-image: linear-gradient(-180deg, #54B9FF 0%, #8955EF 100%);
+        background-image: linear-gradient(-180deg, #54b9ff 0%, #8955ef 100%);
         float: right;
         width: 50%;
         height: 420px;
@@ -126,15 +159,20 @@ body {
         margin: 250px 8px 0 0;
         padding: 0 8px;
     }
-}
 
-.secondary {
-    border: 1px solid blue;
-    position: relative;
-    display: block;
-    clear: both;
-}
+    .moreInfo {
+        display: flex;
+    }
 
-.contact {
-    border: 1px solid yellow;
+    .secondary1,
+    .secondary2,
+    .secondary3 {
+        width: 33.3%;
+        padding: 8px;
+        display: block;
+    }
+
+    .contact .button {
+        display: inline-block;
+    }
 }
