@@ -44,18 +44,16 @@ const IndexPage = () => {
                         <p>
                             Work with out-the-box data capture, or create a
                             custom spec with an easy to use browser extension to
-                            define what data points are important to you
+                            define what data points are important to you.
                         </p>
                     </div>
                     <div className={styles.secondary2}>
                         <h4>2. Automatic implementation</h4>
                         <p>
-                            Save time and money by removing the endless back and
-                            forth between reguirements and developmemnt.
                             Prospektor automatically implemements your journey
-                            tagging for you. For more custom requirements,
-                            Prospektor automatically produces a JSON schema with
-                            your specification, making life easy for developers.
+                            tagging for you, while providing developers with an
+                            easy to use JSON data representation of your
+                            requirements for customisation.
                         </p>
                     </div>
                     <div className={styles.secondary3}>
@@ -63,9 +61,9 @@ const IndexPage = () => {
                         <p>
                             Confidence that your products are tracking what they
                             should be, using automation pipelines to confirm the
-                            results mastch the specfification. Be alerted if
+                            results match your expectations. Be alerted if
                             anything changes to the product that would
-                            invalidate the analytics
+                            invalidate the analytics.
                         </p>
                     </div>
                 </div>
