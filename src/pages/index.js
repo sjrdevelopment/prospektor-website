@@ -69,6 +69,10 @@ const IndexPage = () => {
                 </div>
             </div>
 
+            <div>
+                <a className={styles.link} href="/faqs">FAQs</a>
+            </div>
+
             <div className={styles.contact}>
                 <p>
                     Find out more about product analytics the pain-free way with
