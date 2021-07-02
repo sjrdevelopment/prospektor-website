@@ -33,7 +33,7 @@ const IndexPage = () => {
             </div>
 
             <div className={styles.sketchWrapper}>
-                <img className={styles.sketch} src={sketch} />
+                <img className={styles.sketch} src={sketch} alt="test"/>
             </div>
 
             <div className={styles.secondary}>

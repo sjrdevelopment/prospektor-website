@@ -1,38 +1,52 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function HTML(props) {
-  return (
-    <html {...props.htmlAttributes}>
-      <head>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;500&display=swap" rel="stylesheet" />
-        <meta charSet="utf-8" />
-        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        {props.headComponents}
-      </head>
-      <body {...props.bodyAttributes}>
-        {props.preBodyComponents}
-        <div
-          key={`body`}
-          id="___gatsby"
-          dangerouslySetInnerHTML={{ __html: props.body }}
-        />
-        {props.postBodyComponents}
-      </body>
-    </html>
-  )
+    return (
+        <html {...props.htmlAttributes}>
+            <head>
+                <link rel="preconnect" href="https://fonts.gstatic.com" />
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Saira:wght@300;500&display=swap"
+                    rel="stylesheet"
+                />
+                <meta charSet="utf-8" />
+                <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+                />
+
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            var prospektor = {
+                              appId: 'app-1'
+                            };
+                        `,
+                    }}
+                />
+
+                {props.headComponents}
+            </head>
+            <body {...props.bodyAttributes}>
+                {props.preBodyComponents}
+                <div
+                    key={`body`}
+                    id="___gatsby"
+                    dangerouslySetInnerHTML={{ __html: props.body }}
+                />
+                {props.postBodyComponents}
+            </body>
+        </html>
+    )
 }
 
 HTML.propTypes = {
-  htmlAttributes: PropTypes.object,
-  headComponents: PropTypes.array,
-  bodyAttributes: PropTypes.object,
-  preBodyComponents: PropTypes.array,
-  body: PropTypes.string,
-  postBodyComponents: PropTypes.array,
+    htmlAttributes: PropTypes.object,
+    headComponents: PropTypes.array,
+    bodyAttributes: PropTypes.object,
+    preBodyComponents: PropTypes.array,
+    body: PropTypes.string,
+    postBodyComponents: PropTypes.array,
 }
